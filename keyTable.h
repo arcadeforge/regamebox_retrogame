@@ -3,8 +3,8 @@
 #include </usr/include/linux/input-event-codes.h>
 
 typedef struct {
-	char *name;
-	int   value;
+\tchar *name;
+\tint   value;
 } dict;
 
 dict keyTable[] = {
@@ -277,9 +277,11 @@ dict keyTable[] = {
 	{ "TITLE", KEY_TITLE },
 	{ "SUBTITLE", KEY_SUBTITLE },
 	{ "ANGLE", KEY_ANGLE },
+	{ "FULL_SCREEN", KEY_FULL_SCREEN },
 	{ "ZOOM", KEY_ZOOM },
 	{ "MODE", KEY_MODE },
 	{ "KEYBOARD", KEY_KEYBOARD },
+	{ "ASPECT_RATIO", KEY_ASPECT_RATIO },
 	{ "SCREEN", KEY_SCREEN },
 	{ "PC", KEY_PC },
 	{ "TV", KEY_TV },
@@ -416,6 +418,7 @@ dict keyTable[] = {
 	{ "ATTENDANT_TOGGLE", KEY_ATTENDANT_TOGGLE },
 	{ "LIGHTS_TOGGLE", KEY_LIGHTS_TOGGLE },
 	{ "ALS_TOGGLE", KEY_ALS_TOGGLE },
+	{ "ROTATE_LOCK_TOGGLE", KEY_ROTATE_LOCK_TOGGLE },
 	{ "BUTTONCONFIG", KEY_BUTTONCONFIG },
 	{ "TASKMANAGER", KEY_TASKMANAGER },
 	{ "JOURNAL", KEY_JOURNAL },
@@ -423,6 +426,7 @@ dict keyTable[] = {
 	{ "APPSELECT", KEY_APPSELECT },
 	{ "SCREENSAVER", KEY_SCREENSAVER },
 	{ "VOICECOMMAND", KEY_VOICECOMMAND },
+	{ "ASSISTANT", KEY_ASSISTANT },
 	{ "BRIGHTNESS_MIN", KEY_BRIGHTNESS_MIN },
 	{ "BRIGHTNESS_MAX", KEY_BRIGHTNESS_MAX },
 	{ "KBDINPUTASSIST_PREV", KEY_KBDINPUTASSIST_PREV },
@@ -449,9 +453,9 @@ dict keyTable[] = {
 	{ "FASTREVERSE", KEY_FASTREVERSE },
 	{ "SLOWREVERSE", KEY_SLOWREVERSE },
 	{ "DATA", KEY_DATA },
+	{ "ONSCREEN_KEYBOARD", KEY_ONSCREEN_KEYBOARD },
 	{ "MIN_INTERESTING", KEY_MIN_INTERESTING },
 	{ "MAX", KEY_MAX },
 	{ "CNT", KEY_CNT },
-#endif
-	{ NULL, -1 } // END-OF-LIST
+#endif\n\t{ NULL, -1 } // END-OF-LIST
 };
