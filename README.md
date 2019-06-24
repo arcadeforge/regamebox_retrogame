@@ -1,3 +1,8 @@
+
+Adaption for regamebox and the picade 2 player pcb
+
+
+
 Adafruit-Retrogame
 ==================
 
